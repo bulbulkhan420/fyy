@@ -1,0 +1,34 @@
+<html>
+<head>
+
+<style>
+#ee{
+border:1px solid red;
+width:100%;
+}
+</style>
+
+</head>
+<body>
+<p>Bulbul khan</p>
+<div id="bul"></div>
+<div  id="tul"></div>
+<input id="ee" type="text">
+<button  onclick ="rul()">click</button>
+<button onclick="tu()" >tup</button>
+<script>
+var b,c,d;
+function rul(){
+var a=document.getElementById("ee").value;
+localStorage.setItem("b",a);
+}
+
+function tu(){
+c=localStorage.getItem("b");
+document.getElementById("tul").innerHTML=c;
+}
+</script>
+</body>
+
+</html>
+
